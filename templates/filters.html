@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>filters</h1>
+        <br>
+        <h2>
+        {{key}}
+        <br>
+        <hr>
+        {{key|upper}}        (upper)
+        <br>
+        <hr>
+        {{key|lower}}
+        <br>
+        <hr>
+        {{key|capfirst}}
+        <br>
+        <hr>
+        {{key|title}}
+        <br>
+        <hr>
+        {{key|length}}
+        </h2>
+        <h1>Date filters</h1>
+        <h2>
+            <hr>
+            {{dates}}
+            <br>
+            <hr>
+            {{dates|date:'Y'}}
+            <br>
+            <hr>
+            {{dates|date:'F'}}
+            <br>
+            <hr>
+            {{dates|date:'A'}}
+            <br>
+            <hr>
+            {{dates|date:'Y-A-M'}}
+            <br>
+            <hr>
+            {{dates|date:'D-M-Y'}}
+            <br>
+            <hr>
+            {{dates|date:'a'}}
+        </h2>
+        <hr>
+        <h1>Some other strng filters</h1>
+        <hr>
+        <h2>
+            {{string}}
+            <hr>
+            {{string|truncatewords:2}}
+            <hr>
+            {{string|truncatechars:2}}
+            <hr>
+            {{string|slice:2}}
+        </h2>
+        <hr>
+        <h1>pluralize filter</h1>
+        <h2>I have {{c}} cat</h2>
+        <h2>I have {{c}} cat{{c|pluralize}}</h2>
+        <h2>I have {{c}} mango{{c|pluralize}}</h2>
+        <h2>I have {{c}} mango{{c|pluralize:'es'}}</h2>
+        <h2>I have {{c}} mango{{c|pluralize}}</h2>
+        <h2>{{c|pluralize:'This,These'}} book{{c|pluralize}} {{c|pluralize:'is,are'}} mine</h2>
+    </center>
+</body>
+</html>
